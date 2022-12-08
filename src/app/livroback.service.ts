@@ -20,5 +20,12 @@ export class LivrobackService {
     return this.http.post('http://127.0.0.1:8000/livros/',livro)
   }
 
+  excluirLivro(livro: Livro){
+    return this.http.delete('http://127.0.0.1:8000/livros/'+livro.id+'/')
+  }
+  alteraLivro(livro: Livro){
+    return this.http.patch('http://127.0.0.1:8000/livros/'+livro.id+'/',livro)
+  }
+
 
 }

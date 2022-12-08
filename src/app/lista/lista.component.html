@@ -47,7 +47,7 @@
       <th mat-header-cell *matHeaderCellDef> Configuração </th>
       <td mat-cell *matCellDef="let livro"> 
         <mat-icon>delete</mat-icon>  
-        <mat-icon>edit</mat-icon>  
+        <mat-icon (click)="abrirModal(livro)">edit</mat-icon>  
         <mat-icon>visibility</mat-icon>  
       </td>
     </ng-container>

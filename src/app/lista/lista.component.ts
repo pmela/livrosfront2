@@ -29,19 +29,22 @@ export class ListaComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.listaLivro()
+  }
+
+  listaLivro(){
     this.service.listalivro().subscribe(
       (listadldoback:any)=> {
         this.lista=listadldoback
       }
     )
   }
-
-  abrirModal(){
+  abrirModal(livro?:Livro){
     let meumodal = this.dialog.open(ModaladdComponent, {
-      width: '40em'
+      width: '40em', data:livro
     });
     meumodal.afterClosed().subscribe((resultado) => {
-      // this.exibeLivro()
+      this.listaLivro()
     })
   }
 }
