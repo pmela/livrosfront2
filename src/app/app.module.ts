@@ -18,7 +18,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import { ModalexcluirComponent } from './modalexcluir/modalexcluir.component';
 import { SinopseComponent } from './sinopse/sinopse.component';
-
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -44,6 +44,7 @@ import { SinopseComponent } from './sinopse/sinopse.component';
     FormsModule,
     MatDialogModule,
     MatInputModule,
+    MatCardModule,
 
 
   ],

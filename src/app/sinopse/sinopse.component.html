@@ -1,1 +1,28 @@
-<p>sinopse works!</p>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <mat-card>
+
+        <mat-card-content>
+            <div>
+                <br>
+                <br>
+                <h1 mat-dialog-title>Livro: {{livro.nome}} </h1>
+                <div fxLayout="column" fxLayoutAlign="space-between stretch">
+                    <p>Autor:</p>
+                    <p>{{livro.autor}}</p>
+                    <p>Categoria:</p>
+                    <p>{{livro.categoria}}</p>
+                    <p>Sinopse:</p>
+                    <p>{{livro.descricao}}</p>
+                </div>
+                <div align="end" mat-dialog-actions>
+                    <button mat-button mat-dialog-close>Voltar a Lista</button>
+
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

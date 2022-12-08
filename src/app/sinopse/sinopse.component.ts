@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sinopse.component.css']
 })
 export class SinopseComponent implements OnInit {
-
+  livro: any = {}
   constructor() { }
 
   ngOnInit(): void {
