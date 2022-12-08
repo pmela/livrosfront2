@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 mat-dialog-title>Excluir</h1>
+    <div fxLayout="column" fxLayoutAlign="space-between stretch">
+        <p>Tem certeza que deseja excluir o livro {{livro.nome}}</p>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button mat-dialog-close>Close</button>
+        <button mat-button (click)="excluirLivro()">Excluir</button>
+    </div>
+    </div>           

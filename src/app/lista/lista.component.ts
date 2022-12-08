@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { LivrobackService } from '../livroback.service';
 import { ModaladdComponent } from '../modaladd/modaladd.component';
+import { ModalexcluirComponent } from '../modalexcluir/modalexcluir.component';
 
 export interface Livro {
   id: number;
@@ -47,5 +48,18 @@ export class ListaComponent implements OnInit {
       this.listaLivro()
     })
   }
-}
 
+  abrirModalEx(livro?:Livro){
+    let modalexcluir = this.dialog.open(ModalexcluirComponent, {
+      width: '40em', data:livro
+    });
+    modalexcluir.afterClosed().subscribe((resultado) => {
+      this.listaLivro()
+    })
+  }
+  abreSinpse(){
+    this.rota.navigate(['sinopse'])
+  }
+ 
+}
+ 

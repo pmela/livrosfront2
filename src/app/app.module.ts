@@ -16,6 +16,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
+import { ModalexcluirComponent } from './modalexcluir/modalexcluir.component';
+import { SinopseComponent } from './sinopse/sinopse.component';
 
 
 
@@ -24,7 +26,9 @@ import {MatInputModule} from '@angular/material/input';
   declarations: [
     AppComponent,
     ListaComponent,
-    ModaladdComponent
+    ModaladdComponent,
+    ModalexcluirComponent,
+    SinopseComponent
   ],
   imports: [
     BrowserModule,
